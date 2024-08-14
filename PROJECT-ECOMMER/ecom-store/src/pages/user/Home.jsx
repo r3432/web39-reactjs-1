@@ -6,14 +6,12 @@ import Section from "../../components/user/home/Section";
 const Home = () => {
   return (
     <>
-      {/* Navigation*/}
-      <Header />
+     
       {/* Banner*/}
       <Banner/>
       {/* Section*/}
       <Section/>
-      {/* Footer*/}
-      <Footer/>
+    
     </>
   );
 };

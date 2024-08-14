@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const ProductCard = ({product}) => {
 
@@ -17,11 +18,13 @@ const imgAlt=product.title;
                 Sale
               </div>
               {/* Product image*/}
-              <img
+             <Link to='badge bg-dark text-white position-absolute '>
+             <img
                 className="card-img-top"
                 src={imgSrc}
                 alt={imgAlt}
               />
+             </Link>
               {/* Product details*/}
               <div className="card-body p-4">
                 <div className="text-center">
