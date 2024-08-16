@@ -6,6 +6,7 @@ import ProductDetail from "./pages/user/ProductDetail"
 import DashBoard from "./pages/admin/DashBoard"
 import LayoutAdmin from "./pages/admin/Layout"
 import Login from "./pages/auth/Login"
+import isAuth from "./components/auth/isAuth"
 
 
 const App = () => {
@@ -22,7 +23,7 @@ const App = () => {
 </Route>
 
 
-<Route path="/dashboard" element={<LayoutAdmin/>}>
+<Route path="/dashboard" element={isAuth component={<LayoutAdmin/>}/>}
 <Route index element={<DashBoard/>}/>
 </Route>
 
